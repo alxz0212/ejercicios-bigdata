@@ -1,0 +1,49 @@
+================================================================================
+INSTRUCCIONES PARA EJECUTAR LOS DASHBOARDS
+================================================================================
+
+Asegúrate de estar en la carpeta raíz del proyecto antes de ejecutar estos comandos.
+Ruta raíz: C:\Users\amendoza\PycharmProjects\ejercicios-bigdata
+
+--------------------------------------------------------------------------------
+1. DASHBOARD MODELO A (Streamlit)
+   - Tecnología: Streamlit + Plotly
+   - Enfoque: Análisis simple sobre tablas desnormalizadas.
+--------------------------------------------------------------------------------
+
+Comando para ejecutar:
+streamlit run ejercicios/01_bases_de_datos/1.1_introduccion_sqlite/dashboard_modelo_a.py
+
+(Se abrirá automáticamente en tu navegador)
+
+
+--------------------------------------------------------------------------------
+2. DASHBOARD MODELO B (Streamlit)
+   - Tecnología: Streamlit + Plotly
+   - Enfoque: Análisis de catálogo, precios y fabricantes sobre BD normalizada.
+--------------------------------------------------------------------------------
+
+Comando para ejecutar:
+streamlit run ejercicios/01_bases_de_datos/1.1_introduccion_sqlite/dashboard_modelo_b.py
+
+(Se abrirá automáticamente en tu navegador)
+
+
+--------------------------------------------------------------------------------
+3. DASHBOARD MODELO C (Flask) - ¡EL "GUAY" PARA LA PRESENTACIÓN!
+   - Tecnología: Flask + Chart.js + Bootstrap
+   - Enfoque: KPIs de negocio, ventas diarias, top clientes y alertas de stock.
+--------------------------------------------------------------------------------
+
+Comando para ejecutar:
+python ejercicios/01_bases_de_datos/1.1_introduccion_sqlite/dashboard_modelo_c.py
+
+Luego, abre tu navegador y ve a:
+http://127.0.0.1:5000
+
+
+--------------------------------------------------------------------------------
+NOTA IMPORTANTE:
+Si te sale error de "database is locked", cierra cualquier otro programa que esté
+usando la base de datos (como DB Browser) y reinicia el dashboard.
+--------------------------------------------------------------------------------
