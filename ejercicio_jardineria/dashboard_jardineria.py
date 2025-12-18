@@ -12,6 +12,7 @@ import sqlite3
 from pathlib import Path
 import plotly.express as px
 import plotly.graph_objects as go
+import numpy as np
 
 # --- CONFIGURACIÓN DE PÁGINA ---
 st.set_page_config(
@@ -36,6 +37,14 @@ st.markdown("""
     }
     h1, h2, h3 {
         color: #4CAF50 !important;
+    }
+    .description-box {
+        background-color: #1e2130;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        border: 1px solid #2b2f44;
+        color: #e0e0e0;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -62,6 +71,15 @@ st.sidebar.info("Dashboard desarrollado con Streamlit y Python.")
 # --- PÁGINA 1: VISIÓN GENERAL ---
 if opcion == "Visión General":
     st.title("📊 Visión General del Negocio")
+    
+    st.markdown("""
+    <div class="description-box">
+    <b>📝 Resumen Ejecutivo:</b><br>
+    Esta sección ofrece una radiografía instantánea de la salud de la empresa. 
+    Aquí visualizamos los <b>Indicadores Clave de Rendimiento (KPIs)</b> fundamentales: volumen de clientes, actividad de pedidos y flujo de caja. 
+    Además, analizamos la eficiencia logística mediante el estado de los pedidos y las preferencias financieras de nuestros clientes.
+    </div>
+    """, unsafe_allow_html=True)
     
     # KPIs Principales
     col1, col2, col3, col4 = st.columns(4)
@@ -117,6 +135,15 @@ if opcion == "Visión General":
 elif opcion == "Análisis de Ventas":
     st.title("💰 Análisis de Ventas y Productos")
     
+    st.markdown("""
+    <div class="description-box">
+    <b>📝 Resumen de Mercado:</b><br>
+    Profundizamos en el rendimiento comercial del catálogo. 
+    Identificamos qué <b>gamas de productos</b> aportan mayor valor promedio al negocio y ofrecemos una herramienta de exploración detallada 
+    para consultar el stock y precios de cada artículo individualmente. Ideal para decisiones de reabastecimiento y estrategia de precios.
+    </div>
+    """, unsafe_allow_html=True)
+    
     # Ventas por Gama
     st.subheader("🏆 Top Gamas de Productos (Por Precio Promedio)")
     query_gama = """
@@ -155,19 +182,22 @@ elif opcion == "Análisis de Ventas":
 # --- PÁGINA 3: MAPA DE CLIENTES ---
 elif opcion == "Mapa de Clientes":
     st.title("🌍 Distribución Geográfica de Clientes")
-    st.info("Nota: Como los datos son ficticios (Faker), simularemos coordenadas geográficas aproximadas para visualizar el mapa.")
+    
+    st.markdown("""
+    <div class="description-box">
+    <b>📝 Resumen Geoespacial:</b><br>
+    Visualización interactiva de la cobertura de mercado. 
+    Este mapa permite identificar <b>concentraciones de clientes</b> por región y país. 
+    <i>Nota: Al utilizar datos sintéticos, las coordenadas se simulan algorítmicamente alrededor de puntos base para demostrar la funcionalidad de mapeo.</i>
+    </div>
+    """, unsafe_allow_html=True)
     
     df_geo = cargar_datos("SELECT ciudad, pais, COUNT(*) as clientes FROM cliente GROUP BY ciudad, pais")
     
-    # Simulación de coordenadas (En un caso real, tendrías lat/lon en la BD)
-    # Aquí usamos un truco visual: dispersión aleatoria sobre un mapa base
-    import numpy as np
-    
-    # Coordenadas base (Centro de Europa/España aprox)
+    # Simulación de coordenadas
     lat_base = 40.0
     lon_base = -3.0
     
-    # Generar dispersión
     df_geo['lat'] = lat_base + np.random.normal(0, 10, len(df_geo))
     df_geo['lon'] = lon_base + np.random.normal(0, 15, len(df_geo))
     
@@ -194,6 +224,15 @@ elif opcion == "Mapa de Clientes":
 # --- PÁGINA 4: RECURSOS HUMANOS ---
 elif opcion == "Recursos Humanos":
     st.title("👥 Gestión de Talento")
+    
+    st.markdown("""
+    <div class="description-box">
+    <b>📝 Resumen Organizacional:</b><br>
+    Análisis de la estructura interna y el desempeño del equipo. 
+    Evaluamos la eficacia de la fuerza de ventas identificando a los <b>empleados con mayor cartera de clientes</b> y visualizamos la distribución del personal 
+    entre las diferentes sedes (oficinas) de la empresa mediante gráficos jerárquicos.
+    </div>
+    """, unsafe_allow_html=True)
     
     col1, col2 = st.columns([2, 1])
     
