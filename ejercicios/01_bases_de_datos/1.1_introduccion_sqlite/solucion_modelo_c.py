@@ -30,7 +30,7 @@ from datetime import datetime, timedelta
 # ═══════════════════════════════════════════════════════════════════
 
 BASE_DIR = Path(__file__).parent.parent.parent.parent
-RUTA_CSVs = BASE_DIR / "datos" / "csv_tienda_informatica"
+RUTA_CSVs = BASE_DIR / ".profesor" / ".datos" / "csv_tienda_informatica"
 RUTA_DB = Path(__file__).parent / "tienda_modelo_c.db"
 
 # Importar funciones del Modelo B
@@ -337,9 +337,8 @@ def generar_clientes(conexion):
     ]
 
     for email, nombre, apellido, direccion, telefono in clientes_ficticios:
-        # Usamos INSERT OR IGNORE para evitar errores si se ejecuta varias veces
         cursor.execute("""
-            INSERT OR IGNORE INTO clientes (email, nombre, apellido, direccion, telefono)
+            INSERT INTO clientes (email, nombre, apellido, direccion, telefono)
             VALUES (?, ?, ?, ?, ?)
         """, (email, nombre, apellido, direccion, telefono))
 
@@ -364,7 +363,7 @@ def generar_inventario(conexion):
         ubicacion = random.choice(ubicaciones)
 
         cursor.execute("""
-            INSERT OR REPLACE INTO inventario (producto_id, cantidad_stock, ubicacion, stock_minimo)
+            INSERT INTO inventario (producto_id, cantidad_stock, ubicacion, stock_minimo)
             VALUES (?, ?, ?, ?)
         """, (producto_id, stock, ubicacion, stock_minimo))
 
@@ -379,10 +378,6 @@ def generar_pedidos(conexion):
     # Obtener IDs de clientes
     cursor.execute("SELECT id FROM clientes")
     clientes_ids = [row[0] for row in cursor.fetchall()]
-
-    if not clientes_ids:
-        print("⚠️ No hay clientes para generar pedidos.")
-        return
 
     # Obtener productos con precio
     cursor.execute("SELECT id, precio FROM productos WHERE precio IS NOT NULL LIMIT 100")
@@ -456,18 +451,13 @@ def generar_carritos(conexion):
     productos = cursor.fetchall()
 
     for cliente_id in clientes_ids:
-        # Crear carrito (INSERT OR IGNORE para evitar duplicados si ya existe)
+        # Crear carrito
         cursor.execute("""
-            INSERT OR IGNORE INTO carritos (cliente_id, activo)
+            INSERT INTO carritos (cliente_id, activo)
             VALUES (?, 1)
         """, (cliente_id,))
 
-        # Obtener el ID del carrito (ya sea nuevo o existente)
-        cursor.execute("SELECT id FROM carritos WHERE cliente_id = ?", (cliente_id,))
-        resultado = cursor.fetchone()
-        if not resultado:
-            continue
-        carrito_id = resultado[0]
+        carrito_id = cursor.lastrowid
 
         # Agregar 1-3 productos al carrito
         num_items = random.randint(1, 3)
@@ -477,7 +467,7 @@ def generar_carritos(conexion):
             cantidad = random.randint(1, 2)
 
             cursor.execute("""
-                INSERT OR IGNORE INTO items_carrito (carrito_id, producto_id, cantidad)
+                INSERT INTO items_carrito (carrito_id, producto_id, cantidad)
                 VALUES (?, ?, ?)
             """, (carrito_id, producto_id, cantidad))
 
@@ -509,19 +499,10 @@ def main():
 
     print(f"✅ {len(archivos_csv)} archivos CSV encontrados\n")
 
-    # 3. Limpieza inicial: Eliminar BD existente para empezar de cero
-    if RUTA_DB.exists():
-        try:
-            os.remove(RUTA_DB)
-            print("🗑️  Base de datos anterior eliminada para una ejecución limpia.")
-        except PermissionError:
-            print("⚠️  No se pudo eliminar la base de datos (puede estar en uso).")
-            print("    Se intentará trabajar sobre la existente (puede causar duplicados).")
-
-    # 4. Conectar a BD
+    # 3. Conectar a BD
     conexion = sqlite3.connect(RUTA_DB)
 
-    # 5. Crear esquemas
+    # 4. Crear esquemas
     print("📋 Creando esquema base (Modelo B)...")
     crear_esquema_base(conexion)
     print("✅ Esquema base creado\n")
@@ -529,17 +510,17 @@ def main():
     print("📋 Creando esquema e-commerce (Modelo C)...")
     crear_esquema_ecommerce(conexion)
 
-    # 6. Cargar datos base
+    # 5. Cargar datos base
     cargar_datos_base(archivos_csv, conexion)
 
-    # 7. Generar datos ficticios
+    # 6. Generar datos ficticios
     print("📋 Generando datos de ejemplo para e-commerce...\n")
     generar_clientes(conexion)
     generar_inventario(conexion)
     generar_pedidos(conexion)
     generar_carritos(conexion)
 
-    # 8. Estadísticas
+    # 7. Estadísticas
     cursor = conexion.cursor()
 
     tablas_info = [
