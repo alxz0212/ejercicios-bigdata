@@ -179,6 +179,7 @@ nav:
     - Instalacion de Herramientas: guia-inicio/instalacion.md
     - Tu Primer Ejercicio: guia-inicio/primer-ejercicio.md
     - Roadmap del Curso: guia-inicio/roadmap.md
+    - Infraestructura del Lab: infraestructura.md
 
   - Git y GitHub:
     - git-github/index.md
@@ -189,23 +190,26 @@ nav:
 
   - Ejercicios:
     - ejercicios/index.md
-    - Bases de Datos:
+    - 'Módulo 1: Bases de Datos':
       - '1.1 - Introduccion SQLite': ejercicios/01-introduccion-sqlite.md
       - '2.1 - PostgreSQL HR': ejercicios/02-postgresql-hr.md
       - '2.2 - PostgreSQL Jardineria': ejercicios/03-postgresql-jardineria.md
       - '2.3 - Migracion SQLite → PostgreSQL': ejercicios/04-migracion-sqlite-postgresql.md
       - '3.1 - Oracle HR': ejercicios/05-oracle-hr.md
       - '5.1 - Analisis Excel/Python': ejercicios/06-analisis-excel-python.md
-    - Big Data y ETL:
-      - '02 - Pipeline ETL QoG': ejercicios/02-pipeline-etl-qog.md
+    - 'Módulo 2: Big Data ETL':
+      - 'Concepto Pipeline': ejercicios/02-pipeline-etl-qog.md
+      - 'Procesamiento Distribuido': ejercicios/03-procesamiento-distribuido.md
+    - 'Módulo 3: Analítica Avanzada':
+      - 'Machine Learning': ejercicios/04-machine-learning.md
+      - 'NLP y Texto': ejercicios/05-nlp-mining.md
+    - 'Proyecto Final': ejercicios/06-trabajo-final-capstone.md
 
-  - Dashboards:
-    - dashboards/index.md
+  - Dashboards Interactivos: dashboards/index.md
 
   - Entregas:
-    - Guia General de Entregas: entregas/guia-entregas.md
-
-  - FAQ: faq.md
+    - Guia General: entregas/guia-entregas.md
+    - FAQ: faq.md
 
 copyright: >
   Copyright &copy; 2024 TodoEconometria -
