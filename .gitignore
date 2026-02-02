@@ -96,6 +96,9 @@ entregas/**/.env
 # 1. Carpeta PRIVADA del profesor (Soluciones, exámenes, notas)
 .profesor/
 
+# 1b. Memoria de Claude Code (contiene referencias a archivos privados)
+CLAUDE.md
+
 # 2. Scripts de administración del profesor (NO publicar)
 scripts/
 
