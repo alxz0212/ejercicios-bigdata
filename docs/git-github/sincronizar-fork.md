@@ -3,6 +3,9 @@
 !!! warning "IMPORTANTE"
     Tu fork NO se actualiza automaticamente. Debes sincronizarlo manualmente para obtener los ejercicios nuevos que el profesor agregue.
 
+!!! danger "¿Tu PR tiene 30+ commits cuando solo hiciste 5?"
+    Si al crear tu PR ves muchos commits que no son tuyos, lee la guia **[Como Crear un PR Limpio](pr-limpio.md)** para solucionarlo.
+
 ---
 
 ## El Problema
