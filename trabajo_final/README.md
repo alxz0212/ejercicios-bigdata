@@ -233,6 +233,58 @@ Copia la plantilla desde `trabajo_final/plantilla/` a tu carpeta de entrega.
 
 ---
 
+## IMPORTANTE: Sistema Anti-Copia Automatico
+
+Tu entrega sera analizada **automaticamente** para detectar similitud con el ejemplo
+del profesor. Este sistema verifica:
+
+| Elemento | Que detecta |
+|----------|-------------|
+| **Paises** | Si usas KAZ, UZB, TKM, KGZ, TJK (Asia Central) |
+| **Region** | Si mencionas "Asia Central", "Ruta de la Seda", etc. |
+| **Variables** | Si usas las mismas variables QoG del ejemplo (sh_h2o, wdi_terr, etc.) |
+| **Temas** | Si combinas agua + terrorismo como en el ejemplo |
+| **Codigo** | Si copias estructura o patrones del ejemplo |
+
+### Niveles de similitud y consecuencias
+
+| Nivel | Similitud | Accion automatica |
+|-------|-----------|-------------------|
+| **COPIA** | >80% | RECHAZADO - Tienes 1 oportunidad mas |
+| **Muy similar** | 50-80% | Penalizacion -30% |
+| **Similar parcial** | 25-50% | Penalizacion -10% |
+| **Original** | <25% | Sin penalizacion |
+
+### Si tu entrega es rechazada por similitud
+
+1. Recibiras un mensaje automatico explicando por que
+2. Tienes **1 oportunidad** para rehacer tu trabajo con:
+   - Otros 5 paises (de otra region del mundo)
+   - Otras variables QoG
+   - Otra pregunta de investigacion
+3. Si la segunda entrega tambien es similar: nota 0
+
+### Sugerencias para ser original
+
+**Regiones interesantes (NO uses Asia Central):**
+- Sudamerica: ARG, BRA, CHL, COL, PER
+- Europa del Este: POL, HUN, CZE, ROU, BGR
+- Africa: NGA, ZAF, KEN, GHA, ETH
+- Sudeste Asiatico: IDN, THA, VNM, MYS, PHL
+- Medio Oriente: SAU, ARE, TUR, IRN, EGY
+
+**Temas interesantes (NO uses agua + terrorismo):**
+- Educacion vs PIB
+- Corrupcion vs democracia
+- Salud vs desarrollo
+- Libertad de prensa vs estabilidad
+- Igualdad de genero vs economia
+
+**La creatividad suma puntos.** Un analisis original sobre un tema poco comun
+puede obtener puntos extra en el ranking.
+
+---
+
 ## Recursos
 
 - **Material teorico del curso:** `ejercicios/07_infraestructura_bigdata/` (Docker, Spark, Hadoop)
