@@ -1161,6 +1161,55 @@ Una vez que Spark procesa los datos, frecuentemente necesitamos guardar los
 resultados en una base de datos relacional para consumo por dashboards,
 APIs, o reportes.
 
+### Prerequisito: descargar el driver JDBC de PostgreSQL
+
+Para que Spark pueda comunicarse con PostgreSQL necesita un **driver JDBC**.
+Este es un archivo `.jar` (Java Archive) que actua como traductor entre
+Spark (que corre sobre la JVM) y PostgreSQL.
+
+**Paso 1:** Descargar el JAR desde la pagina oficial:
+
+```
+https://jdbc.postgresql.org/download/
+```
+
+Buscar la version mas reciente (al momento de escribir esto: `postgresql-42.7.1.jar`).
+Tambien se puede descargar directamente desde terminal:
+
+```bash
+# Desde PowerShell (Windows)
+curl -L -o jars/postgresql-42.7.1.jar https://jdbc.postgresql.org/download/postgresql-42.7.1.jar
+
+# Desde bash (Linux/Mac)
+wget -P jars/ https://jdbc.postgresql.org/download/postgresql-42.7.1.jar
+```
+
+**Paso 2:** Colocar el archivo en la carpeta `jars/` de tu proyecto Docker:
+
+```
+tu_proyecto/
+├── compose.yaml
+├── datos/
+├── jars/
+│   └── postgresql-42.7.1.jar   <-- aqui
+└── ...
+```
+
+**Paso 3:** Verificar que el `compose.yaml` monta esa carpeta en los contenedores Spark:
+
+```yaml
+services:
+  spark-master:
+    volumes:
+      - ./jars:/opt/spark-jars     # El JAR queda disponible en /opt/spark-jars/
+```
+
+Con esto, desde cualquier script PySpark puedes referenciar el driver como
+`/opt/spark-jars/postgresql-42.7.1.jar`.
+
+> **Nota:** Sin este JAR, Spark lanzara el error:
+> `java.lang.ClassNotFoundException: org.postgresql.Driver`
+
 ### Metodo 1: JDBC Connector (recomendado para datasets grandes)
 
 ```python
