@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="docs/assets/todoeconometria_logo.png" alt="TodoEconometria" width="200">
+
 **El curso más completo de Big Data en español**
 *Desde tu primera query SQL hasta dashboards en tiempo real con Kafka y AWS*
 

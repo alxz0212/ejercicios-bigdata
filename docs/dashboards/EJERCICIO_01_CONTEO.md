@@ -38,7 +38,7 @@ Al ejecutar `01_conteo_palabras.py`, verás surgir el Top 10 de palabras que dom
 
 Aquí es donde visualizamos el espectro de frecuencias. ¿Ves esas barras gigantes? Son las palabras que más se repiten.
 
-![Frecuencia de Palabras](conteo_palabras_top10.png)
+<!-- Imagen pendiente: conteo_palabras_top10.png -->
 
 ---
 

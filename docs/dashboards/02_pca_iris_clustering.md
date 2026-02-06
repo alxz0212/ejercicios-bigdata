@@ -64,6 +64,10 @@ Es uno de los datasets más utilizados en:
 
 > **NOTA BOTÁNICA:** El **sépalo** es la parte verde que protege la flor antes de abrirse. El **pétalo** es la parte colorida de la flor.
 
+### 📊 Análisis Exploratorio de Datos (EDA)
+
+![EDA del Dataset Iris](02_pca_iris_eda.png)
+
 ### 🔍 ¿Por Qué es Importante Este Dataset?
 
 1. **Tamaño Manejable**: 150 observaciones son suficientes para aprender sin ser abrumadoras
@@ -287,6 +291,10 @@ En el espacio 2D del PCA, los clusters se ven así:
 ---
 
 ## 6. Interpretación de Resultados
+
+### Panel Completo: PCA + Clustering K-Means
+
+![PCA + Clustering K-Means: Iris Dataset](02_pca_iris_clustering.png)
 
 ### 🔬 Análisis por Especie
 

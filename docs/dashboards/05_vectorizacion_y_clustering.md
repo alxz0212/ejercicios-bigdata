@@ -73,9 +73,56 @@ Al ejecutar el código, se genera la visualización `05_visualizacion_clustering
     - Si hay solapamiento, indica que hay documentos que comparten vocabulario de varios temas (ej. un artículo sobre "Tecnología en la Salud").
 3. **Los Ejes (PCA)**: El Eje X (Componente 1) suele capturar la diferencia más grande entre los temas (ej. términos médicos vs términos financieros).
 
+### Palabras Dominantes por Cluster
+
+Cada cluster tiene un "perfil semántico" definido por las palabras que más contribuyen a su identidad:
+
+![Clustering con Palabras Dominantes](05_clustering_palabras_dominantes.png)
+
+### Selección del k Óptimo (Elbow y Silhouette)
+
+¿Cómo sabemos cuántos clusters crear? Dos métodos complementarios:
+
+- **Método del Codo (Elbow):** Buscamos el punto donde la inercia deja de decrecer significativamente.
+- **Coeficiente de Silueta:** Un valor cercano a 1 indica clusters bien separados.
+
+![Elbow y Silhouette](05_elbow_silhouette.png)
+
+### Análisis de Silueta por Cluster
+
+El análisis granular muestra la cohesión interna de cada cluster. Un ancho uniforme indica clusters bien definidos:
+
+![Silhouette Detallado](05_silhouette_detallado.png)
+
+### Validación: Temas Reales vs Clusters
+
+Los diagramas de Venn muestran la coincidencia entre los temas reales del corpus y los clusters detectados automáticamente. Un solapamiento del 100% confirma que K-Means ha identificado correctamente los tópicos:
+
+![Venn: Temas Reales vs Clusters](05_venn_clusters.png)
+
 ---
 
-## 👨‍🏫 4. Guía Didáctica: Paso a Paso
+## 🚢 4. Caso Práctico: Clustering del Titanic
+
+Para demostrar que K-Means funciona más allá del texto, aplicamos el mismo algoritmo al dataset Titanic con características demográficas (edad, tarifa, clase):
+
+### Selección de k para el Titanic
+
+![Elbow y Silhouette - Titanic](05_titanic_elbow_silhouette.png)
+
+### Clustering de Pasajeros (PCA)
+
+![Clustering Titanic](05_titanic_clustering.png)
+
+### Perfilado de Clusters
+
+Cada cluster revela un perfil de pasajero diferente (edad promedio, tarifa, tasa de supervivencia):
+
+![Características por Cluster](05_titanic_clustering_caracteristicas.png)
+
+---
+
+## 👨‍🏫 5. Guía Didáctica: Paso a Paso
 
 ### Paso 1: Generación del Corpus
 

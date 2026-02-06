@@ -37,7 +37,7 @@ Al ejecutar `02_limpieza_texto.py`, verás el contraste brutal entre los dos mun
 
 Observa cómo en el gráfico izquierdo predominan las palabras vacías, mientras que en el derecho aparece el **sentimiento puro**.
 
-![Comparativa de Limpieza](limpieza_stopwords_comparativa.png)
+<!-- Imagen pendiente: limpieza_stopwords_comparativa.png -->
 
 ---
 

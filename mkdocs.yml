@@ -59,9 +59,10 @@ theme:
     - content.tabs.link
     - content.tooltips
 
+  logo: assets/todoeconometria_logo.png
+  favicon: assets/todoeconometria_logo.png
   icon:
     repo: fontawesome/brands/github
-    logo: material/database
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16

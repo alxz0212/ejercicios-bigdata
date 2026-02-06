@@ -12,6 +12,8 @@ Imagina que gestionas un portal dinámico. Tu jefe te ha puesto un reto: **"Agru
 
 Para resolverlo, usamos el **Índice de Jaccard**, una herramienta matemática que convierte el texto en "conjuntos" y mide cuánto se solapan. ⚡
 
+![Diagrama Conceptual de Jaccard](jaccard_diagram.png)
+
 ---
 
 ## 🏗️ El Corazón del Algoritmo
@@ -26,6 +28,10 @@ La magia ocurre comparando lo que los documentos **comparten** frente a **todo l
 
 ![Lógica de Jaccard](comparacion_jaccard.png)
 
+### La Fórmula Matemática
+
+![Fórmula de Jaccard](formula_jaccard.png)
+
 ---
 
 ## 🎸 Resultados Reales (Generados por tu Script)
@@ -36,6 +42,8 @@ Aquí es donde la teoría se encuentra con la realidad. Al ejecutar `04_similitu
 
 En esta matriz, los colores cálidos (rojos) indican alta similitud. Observa cómo se forman **cuadrados en la diagonal**. ¡Eso son tus categorías de Fútbol, Tecnología y Cocina detectadas automáticamente! ⚡
 
+![Índice de Categorías del Corpus](indice_categorias.png)
+
 ![Matriz de Similitud Real](analisis_jaccard_completo.png)
 
 ### 2. La Prueba del Algoritmo (Clustermap)
@@ -43,6 +51,12 @@ En esta matriz, los colores cálidos (rojos) indican alta similitud. Observa có
 ¿Puede la inteligencia artificial agrupar los temas sin ayuda? El **Dendrograma** (el árbol lateral) nos dice que sí. Los artículos de la misma temática se "buscan" y se agrupan en ramas comunes. 💀
 
 ![Agrupamiento Jerárquico](clustermap_ejercicio.png)
+
+### 3. Clustermap con Valores Numéricos
+
+Otra vista del mismo agrupamiento, ahora con los valores exactos de similitud en cada celda:
+
+![Clustermap Detallado](clustermap.png)
 
 ---
 
@@ -53,6 +67,8 @@ No es solo un ejercicio académico. Esta técnica se usa cada segundo en:
 - **🏴‍☠️ Detección de Plagio:** Comparar entregas de alumnos para ver si comparten "demasiado" vocabulario.
 - **🛸 Recomendadores:** "Si leíste sobre el nuevo CPU, te recomiendo este artículo sobre memoria RAM".
 - **⛓️ SEO y Buscadores:** Para entender si dos páginas hablan de lo mismo y evitar contenido duplicado.
+
+![Aplicaciones Reales de Jaccard](aplicaciones_reales.png)
 
 ---
 
