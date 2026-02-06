@@ -207,7 +207,9 @@ nav:
       - 'NLP y Text Mining': ejercicios/05-nlp-mining.md
     - 'Modulo 4: Econometria de Panel':
       - 'Analisis de Datos de Panel': ejercicios/08-panel-data.md
-    - 'Modulo 5: Streaming e Infraestructura Cloud':
+    - 'Modulo 5: Infraestructura Big Data':
+      - 'Docker Compose y Cluster Spark': ejercicios/07-infraestructura-bigdata.md
+    - 'Modulo 6: Streaming e Infraestructura Cloud':
       - 'Streaming con Kafka': ejercicios/08-streaming-kafka.md
       - 'Cloud con LocalStack': ejercicios/09-cloud-localstack.md
     - 'Trabajo Final':

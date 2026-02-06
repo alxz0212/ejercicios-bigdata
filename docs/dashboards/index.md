@@ -78,3 +78,6 @@ Los scripts que generan estas visualizaciones estan en:
 - `ejercicios/04_machine_learning/` -- PCA, K-Means, Silhouette
 - `ejercicios/05_nlp_text_mining/` -- Conteo, limpieza, sentimiento, Jaccard
 - `ejercicios/06_análisis_datos_de_panel/` -- Pipeline QoG con Apache Spark
+- `ejercicios/07_infraestructura_bigdata/` -- Docker Compose, Cluster Spark
+- `ejercicios/08_streaming_kafka/` -- Kafka, Spark Structured Streaming
+- `ejercicios/09_cloud_localstack/` -- LocalStack, Terraform, AWS

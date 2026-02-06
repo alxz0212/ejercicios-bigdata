@@ -39,7 +39,13 @@ Lista completa de todos los ejercicios disponibles en el curso.
 |---|-----------|------------|-------|--------|
 | 06 | [Analisis de Datos de Panel](08-panel-data.md) | linearmodels, Panel OLS, Altair | Avanzado | Disponible |
 
-### Modulo 5: Streaming e Infraestructura Cloud
+### Modulo 5: Infraestructura Big Data
+
+| # | Ejercicio | Tecnologia | Nivel | Estado |
+|---|-----------|------------|-------|--------|
+| 07 | [Infraestructura Big Data](07-infraestructura-bigdata.md) | Docker Compose, Apache Spark | Intermedio-Avanzado | Disponible |
+
+### Modulo 6: Streaming e Infraestructura Cloud
 
 | # | Ejercicio | Tecnologia | Nivel | Estado |
 |---|-----------|------------|-------|--------|
@@ -294,7 +300,29 @@ Lista completa de todos los ejercicios disponibles en el curso.
 
 ---
 
-## MODULO 5: Streaming e Infraestructura Cloud
+## MODULO 5: Infraestructura Big Data
+
+### [Infraestructura Big Data: Docker y Spark](07-infraestructura-bigdata.md)
+
+!!! info "Detalles"
+    - **Nivel:** Intermedio-Avanzado
+    - **Tipo:** Teorico-Conceptual con ejemplos practicos
+    - **Tecnologias:** Docker, Docker Compose, Apache Spark
+
+**Que aprenderas:**
+
+- Docker: contenedores, imagenes, Dockerfile, orquestacion con Compose
+- Redes, volumenes, healthchecks, patrones de produccion
+- Apache Spark: arquitectura Master-Worker, cluster con Docker
+- SparkSession, Lazy Evaluation, DAG, optimizador Catalyst
+- Spark + PostgreSQL via JDBC
+- De Standalone a produccion (Kubernetes, EMR, Dataproc)
+
+[Ver Ejercicio Completo](07-infraestructura-bigdata.md){ .md-button }
+
+---
+
+## MODULO 6: Streaming e Infraestructura Cloud
 
 ### [Streaming con Apache Kafka](08-streaming-kafka.md)
 

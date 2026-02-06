@@ -53,7 +53,7 @@ Estos dashboards se actualizan automaticamente con datos reales de APIs publicas
 </div>
 
 <div style="background: #1e1e2e; border-radius: 10px; padding: 20px;">
-<div style="font-size: 2.5em; font-weight: bold; color: #3498db;">6</div>
+<div style="font-size: 2.5em; font-weight: bold; color: #3498db;">7</div>
 <div style="color: #888;">Modulos completos</div>
 </div>
 
@@ -194,12 +194,21 @@ Analiza datos longitudinales (pais x ano). Replica estudios academicos reales so
 
 ---
 
-### Modulo 5: Streaming e Infraestructura Cloud
+### Modulo 5: Infraestructura Big Data
+> Docker, Docker Compose, Apache Spark, Cluster Computing
+
+Entiende como se construye la infraestructura. Contenedores, orquestacion con Docker Compose, clusters Spark con arquitectura Master-Worker. La base para el Trabajo Final.
+
+[Ver Ejercicios](ejercicios/index.md#modulo-5-infraestructura-big-data){ .md-button }
+
+---
+
+### Modulo 6: Streaming e Infraestructura Cloud
 > Kafka, Spark Streaming, LocalStack, Terraform, AWS
 
 El modulo mas avanzado. Streaming en tiempo real con Kafka, simulacion de AWS con LocalStack, Infraestructura como Codigo con Terraform.
 
-[Ver Ejercicios](ejercicios/index.md#modulo-5-streaming-e-infraestructura-cloud){ .md-button }
+[Ver Ejercicios](ejercicios/index.md#modulo-6-streaming-e-infraestructura-cloud){ .md-button }
 
 ---
 
