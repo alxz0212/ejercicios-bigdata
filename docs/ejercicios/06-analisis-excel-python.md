@@ -1,6 +1,10 @@
 # Ejercicio 5.1: Análisis de Datos con Excel y Python
 
+<<<<<<< HEAD
 > **Estado:** En construcción
+=======
+> **Estado:** Disponible
+>>>>>>> upstream/main
 
 ---
 

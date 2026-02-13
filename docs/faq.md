@@ -168,7 +168,11 @@ Lo necesitas porque:
 - :lock: No puedes modificar el repositorio del profesor directamente
 - :pencil2: El fork es TU espacio para trabajar
 - :arrows_counterclockwise: Puedes sincronizarlo con el original
+<<<<<<< HEAD
 - :outbox_tray: Desde tu fork creas Pull Requests
+=======
+- :outbox_tray: El sistema evalua automaticamente tus PROMPTS en tu fork
+>>>>>>> upstream/main
 
 Ver guia completa: [Fork y Clone](git-github/fork-clone.md)
 
@@ -274,8 +278,13 @@ Copia el mensaje de error y buscalo. Probablemente alguien mas ya lo tuvo.
 
 El objetivo es **aprender**, no aprobar rapidamente.
 
+<<<<<<< HEAD
 - Puedes actualizar tu Pull Request cuantas veces quieras
 - El profesor te dara feedback iterativo
+=======
+- Puedes actualizar tu fork cuantas veces quieras con `git push`
+- El sistema de evaluacion automatica revisa tu archivo PROMPTS.md
+>>>>>>> upstream/main
 - Aprendes mas de los errores que de los aciertos
 
 ---
@@ -287,7 +296,11 @@ El objetivo es **aprender**, no aprobar rapidamente.
 1. Justifica por que las necesitas
 2. Agregalas a `requirements.txt`
 3. Documenta como instalarlas
+<<<<<<< HEAD
 4. Menciona en el PR que librerias usaste
+=======
+4. Menciona en PROMPTS.md que librerias usaste
+>>>>>>> upstream/main
 
 !!! example "Ejemplo"
     Si usas `seaborn` para visualizaciones:
@@ -298,7 +311,11 @@ El objetivo es **aprender**, no aprobar rapidamente.
     seaborn==0.12.0  # Para visualizaciones avanzadas
     ```
 
+<<<<<<< HEAD
     Y en el PR explica: "Use seaborn para crear graficos mas profesionales"
+=======
+    Y en tu archivo `PROMPTS.md` menciona: "Use seaborn para crear graficos mas profesionales"
+>>>>>>> upstream/main
 
 ---
 
@@ -310,7 +327,11 @@ El objetivo es **aprender**, no aprobar rapidamente.
 
 - :white_check_mark: Soporte completo en las sesiones
 - :white_check_mark: Consultas por email
+<<<<<<< HEAD
 - :white_check_mark: Revision detallada de PRs
+=======
+- :white_check_mark: Revision automatica de entregas
+>>>>>>> upstream/main
 
 **Para autodidactas:**
 
@@ -494,7 +515,11 @@ Con las habilidades del curso puedes aplicar a:
 
 **Si**, pero considera:
 
+<<<<<<< HEAD
 - **Despues de completar:** Compartir despues de que el profesor revise tu PR
+=======
+- **Despues de completar:** Compartir despues de recibir tu nota
+>>>>>>> upstream/main
 - **Con creditos:** Menciona que es del curso de TodoEconometria
 - **No spoilers:** No compartas soluciones para ayudar a hacer trampa
 

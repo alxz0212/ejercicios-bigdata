@@ -9,6 +9,10 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+<<<<<<< HEAD
+=======
+  custom_dir: docs/overrides
+>>>>>>> upstream/main
   language: es
   palette:
     # Palette toggle for light mode
@@ -59,9 +63,16 @@ theme:
     - content.tabs.link
     - content.tooltips
 
+<<<<<<< HEAD
   icon:
     repo: fontawesome/brands/github
     logo: material/database
+=======
+  logo: assets/todoeconometria_logo.png
+  favicon: assets/todoeconometria_logo.png
+  icon:
+    repo: fontawesome/brands/github
+>>>>>>> upstream/main
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -81,9 +92,32 @@ theme:
     code: Roboto Mono
 
 plugins:
+<<<<<<< HEAD
   - search:
       lang: es
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+=======
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      languages:
+        - locale: es
+          default: true
+          name: Espanol
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: "Big Data with Python - From Zero to Production"
+          site_description: "Complete educational repository for mastering Big Data with Python, from basic concepts to production"
+  - search:
+      lang:
+        - es
+        - en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - social
+>>>>>>> upstream/main
   - minify:
       minify_html: true
       minify_js: true
@@ -136,6 +170,16 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra:
+<<<<<<< HEAD
+=======
+  alternate:
+    - name: Espanol
+      link: /ejercicios-bigdata/
+      lang: es
+    - name: English
+      link: /ejercicios-bigdata/en/
+      lang: en
+>>>>>>> upstream/main
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/TodoEconometria
@@ -143,11 +187,37 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/juangutierrezconsultor/
       name: LinkedIn
+<<<<<<< HEAD
+=======
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UC2ok03ltDHcVo1PZ1C8mGeg
+      name: YouTube
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/todoeconometria
+      name: Twitter / X
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/groups/seriestemporales
+      name: FB Series Temporales
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/groups/econometriaMCO
+      name: FB Econometria MCO
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/todoeconometria/
+      name: Instagram
+    - icon: fontawesome/brands/pinterest
+      link: https://www.pinterest.es/todoeconometria/
+      name: Pinterest
+>>>>>>> upstream/main
     - icon: fontawesome/solid/globe
       link: https://www.todoeconometria.com
       name: Web TodoEconometria
 
   analytics:
+<<<<<<< HEAD
+=======
+    provider: google
+    property: G-9X884R0HXK
+>>>>>>> upstream/main
     feedback:
       title: Es util esta pagina?
       ratings:
@@ -168,27 +238,44 @@ extra_css:
 
 extra_javascript:
   - javascripts/mathjax.js
+<<<<<<< HEAD
   - https://polyfill.io/v3/polyfill.min.js?features=es6
+=======
+  - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6
+>>>>>>> upstream/main
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - Home: index.md
+<<<<<<< HEAD
+=======
+  - Ranking: ranking.md
+>>>>>>> upstream/main
 
   - Guia de Inicio:
     - guia-inicio/index.md
     - Instalacion de Herramientas: guia-inicio/instalacion.md
     - Tu Primer Ejercicio: guia-inicio/primer-ejercicio.md
     - Roadmap del Curso: guia-inicio/roadmap.md
+<<<<<<< HEAD
+=======
+    - Infraestructura del Lab: infraestructura.md
+    - Guia de Entregas: entregas/guia-entregas.md
+>>>>>>> upstream/main
 
   - Git y GitHub:
     - git-github/index.md
     - Fork y Clone: git-github/fork-clone.md
     - Sincronizar Fork: git-github/sincronizar-fork.md
+<<<<<<< HEAD
     - Crear Pull Requests: git-github/pull-requests.md
+=======
+>>>>>>> upstream/main
     - Comandos Utiles: git-github/comandos-utiles.md
 
   - Ejercicios:
     - ejercicios/index.md
+<<<<<<< HEAD
     - Bases de Datos:
       - '1.1 - Introduccion SQLite': ejercicios/01-introduccion-sqlite.md
       - '2.1 - PostgreSQL HR': ejercicios/02-postgresql-hr.md
@@ -206,6 +293,60 @@ nav:
     - Guia General de Entregas: entregas/guia-entregas.md
 
   - FAQ: faq.md
+=======
+    - Guia de Entregas: entregas/guia-entregas.md
+    - 'Modulo 1: Bases de Datos':
+      - '1.1 - Introduccion SQLite': ejercicios/01-introduccion-sqlite.md
+      - '2.1 - PostgreSQL HR': ejercicios/02-postgresql-hr.md
+      - '2.2 - PostgreSQL Jardineria': ejercicios/03-postgresql-jardineria.md
+      - '2.3 - Migracion SQLite a PostgreSQL': ejercicios/04-migracion-sqlite-postgresql.md
+      - '3.1 - Oracle HR': ejercicios/05-oracle-hr.md
+      - '5.1 - Analisis Excel/Python': ejercicios/06-analisis-excel-python.md
+    - 'Modulo 2: Limpieza de Datos y ETL':
+      - 'Pipeline ETL QoG': ejercicios/02-pipeline-etl-qog.md
+    - 'Modulo 3: Procesamiento Distribuido':
+      - 'Procesamiento con Dask': ejercicios/03-procesamiento-distribuido.md
+    - 'Modulo 4: Machine Learning':
+      - 'PCA, K-Means y Transfer Learning': ejercicios/04-machine-learning.md
+      - 'Series Temporales ARIMA': ejercicios/07-series-temporales-arima.md
+    - 'Modulo 5: NLP y Text Mining':
+      - 'NLP y Text Mining': ejercicios/05-nlp-mining.md
+    - 'Modulo 6: Analisis de Datos de Panel':
+      - 'Datos de Panel': ejercicios/08-panel-data.md
+    - 'Modulo 7: Infraestructura Big Data':
+      - 'Docker Compose y Cluster Spark': ejercicios/07-infraestructura-bigdata.md
+    - 'Modulo 8: Streaming con Kafka':
+      - 'Streaming con Kafka': ejercicios/08-streaming-kafka.md
+    - 'Modulo 9: Cloud con LocalStack':
+      - 'Cloud con LocalStack': ejercicios/09-cloud-localstack.md
+    - 'Trabajo Final':
+      - 'Enunciado y Plantilla': ejercicios/06-trabajo-final-capstone.md
+
+  - Dashboards y Resultados:
+    - dashboards/index.md
+    - 'Machine Learning':
+      - 'PCA + K-Means Iris': dashboards/02_pca_iris_clustering.md
+      - 'PCA estilo FactoMineR': dashboards/02_PCA_FactoMineR_style.md
+      - 'Transfer Learning Flores': dashboards/flores-transfer-learning.md
+    - 'Series Temporales':
+      - 'ARIMA/SARIMA Box-Jenkins': dashboards/04_series_temporales_arima.md
+      - 'ARIMA PRO (Tema Financiero)': dashboards/arima-sarima-pro.md
+    - 'NLP y Text Mining':
+      - 'Conteo de Palabras': dashboards/EJERCICIO_01_CONTEO.md
+      - 'Filtro de Stopwords': dashboards/EJERCICIO_02_LIMPIEZA.md
+      - 'Similitud de Jaccard': dashboards/04_similitud_jaccard.md
+      - 'Vectorizacion y Clustering': dashboards/05_vectorizacion_y_clustering.md
+    - 'Datos de Panel (Big Data)':
+      - 'QoG - Spark + PostgreSQL + ML': dashboards/06_analisis_panel_qog.md
+    - 'Streaming y Cloud':
+      - 'Observatorio Sismico Global': dashboards/dashboard_sismos_global.md
+      - 'ISS Tracker': dashboards/dashboard_iss_tracker.md
+
+  - Entregas:
+    - Guia General: entregas/guia-entregas.md
+    - Streaming y Cloud: entregas/streaming-cloud.md
+    - FAQ: faq.md
+>>>>>>> upstream/main
 
 copyright: >
   Copyright &copy; 2024 TodoEconometria -

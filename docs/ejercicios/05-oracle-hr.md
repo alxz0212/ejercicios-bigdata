@@ -1,6 +1,10 @@
 # Ejercicio 3.1: Oracle con Base de Datos HR
 
+<<<<<<< HEAD
 > **Estado:** En construcción
+=======
+> **Estado:** Disponible
+>>>>>>> upstream/main
 
 ---
 

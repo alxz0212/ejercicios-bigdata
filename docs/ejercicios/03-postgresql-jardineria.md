@@ -1,6 +1,10 @@
 # Ejercicio 2.2: PostgreSQL con Base de Datos Jardinería
 
+<<<<<<< HEAD
 > **Estado:** En construcción
+=======
+> **Estado:** Disponible
+>>>>>>> upstream/main
 
 ---
 

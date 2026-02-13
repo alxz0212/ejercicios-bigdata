@@ -311,7 +311,11 @@ graph TD
 ### Para Alumnos del Curso Presencial
 
 - :white_check_mark: Certificado de 230 horas
+<<<<<<< HEAD
 - :white_check_mark: Evaluacion continua via Pull Requests
+=======
+- :white_check_mark: Evaluacion automatica via PROMPTS.md
+>>>>>>> upstream/main
 - :white_check_mark: Proyecto final integrador
 - :white_check_mark: Soporte directo del instructor
 

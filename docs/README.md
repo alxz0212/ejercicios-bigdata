@@ -48,8 +48,14 @@ docs/
 │   ├── index.md
 │   ├── fork-clone.md
 │   ├── sincronizar-fork.md
+<<<<<<< HEAD
 │   ├── pull-requests.md
 │   └── comandos-utiles.md
+=======
+│   └── comandos-utiles.md
+├── entregas/               # Guias de entregas
+│   └── guia-entregas.md    # Sistema de evaluacion por PROMPTS
+>>>>>>> upstream/main
 ├── ejercicios/             # Ejercicios del curso
 │   ├── index.md
 │   └── 01-introduccion-sqlite.md

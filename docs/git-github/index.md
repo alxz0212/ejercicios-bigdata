@@ -1,6 +1,10 @@
 # Git y GitHub
 
+<<<<<<< HEAD
 Guias completas para trabajar con Git y GitHub en este curso.
+=======
+Guias para trabajar con Git y GitHub en este curso.
+>>>>>>> upstream/main
 
 ## Que encontraras aqui?
 
@@ -23,6 +27,7 @@ Mantener tu Fork actualizado con los ejercicios nuevos del profesor:
 - Resolver conflictos de merge
 - Diagramas visuales del flujo completo
 
+<<<<<<< HEAD
 ### [Crear Pull Requests](pull-requests.md)
 
 Entregar tus ejercicios al profesor:
@@ -32,6 +37,8 @@ Entregar tus ejercicios al profesor:
 - Como recibir y aplicar feedback
 - Mejores practicas
 
+=======
+>>>>>>> upstream/main
 ### [Comandos Utiles](comandos-utiles.md)
 
 Cheatsheet de Git para el dia a dia:
@@ -43,11 +50,16 @@ Cheatsheet de Git para el dia a dia:
 
 ---
 
+<<<<<<< HEAD
 ## Flujo de Trabajo Completo
+=======
+## Flujo de Trabajo (Sin Pull Request)
+>>>>>>> upstream/main
 
 ```mermaid
 graph LR
     A[Fork Repo] --> B[Clone a PC]
+<<<<<<< HEAD
     B --> C[Crear Rama]
     C --> D[Trabajar]
     D --> E[Commit]
@@ -58,6 +70,19 @@ graph LR
     H -->|Si| I[Completado]
 ```
 
+=======
+    B --> C[Trabajar]
+    C --> D[Documentar PROMPTS.md]
+    D --> E[Commit]
+    E --> F[Push a tu Fork]
+    F --> G[Evaluacion Automatica]
+```
+
+!!! success "Sistema simplificado"
+    **No necesitas crear Pull Request.** El sistema evalua tu `PROMPTS.md`
+    automaticamente. Solo sube tu trabajo con `git push`.
+
+>>>>>>> upstream/main
 ---
 
 ## Conceptos Basicos
@@ -78,7 +103,11 @@ graph LR
     - Compartir codigo publicamente
     - Colaborar con otros desarrolladores
     - Alojar proyectos
+<<<<<<< HEAD
     - Gestionar Pull Requests
+=======
+    - Gestionar proyectos y colaboracion
+>>>>>>> upstream/main
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -121,7 +150,11 @@ graph LR
     Aprende a [Sincronizar tu Fork](sincronizar-fork.md) para obtener ejercicios nuevos.
 
 !!! success "Completaste un ejercicio?"
+<<<<<<< HEAD
     Aprende a [Crear Pull Requests](pull-requests.md) para entregarlo.
+=======
+    Solo haz `git push` a tu fork. Lee la [Guia de Entregas](../entregas/guia-entregas.md).
+>>>>>>> upstream/main
 
 ---
 

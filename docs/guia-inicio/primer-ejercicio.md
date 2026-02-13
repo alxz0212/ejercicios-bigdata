@@ -7,6 +7,7 @@ Esta guia te llevara paso a paso por el proceso de completar y entregar tu prime
 ```mermaid
 graph LR
     A[Fork Repo] --> B[Clone a tu PC]
+<<<<<<< HEAD
     B --> C[Crear Rama]
     C --> D[Trabajar en Ejercicio]
     D --> E[Commit Cambios]
@@ -18,6 +19,19 @@ graph LR
     I -->|Si| J[Ejercicio Completado]
 ```
 
+=======
+    B --> C[Trabajar en Ejercicio]
+    C --> D[Documentar PROMPTS.md]
+    D --> E[Commit Cambios]
+    E --> F[Push a tu Fork]
+    F --> G[Evaluacion Automatica]
+```
+
+!!! warning "Sistema de Evaluacion por PROMPTS"
+    **NO se usan Pull Requests.** El sistema evalua tu archivo `PROMPTS.md`
+    directamente en tu fork. Solo necesitas hacer `git push`.
+
+>>>>>>> upstream/main
 ---
 
 ## Paso 1: Abrir el Proyecto en PyCharm
@@ -227,6 +241,7 @@ git push origin garcia-ejercicio-01
 
 ---
 
+<<<<<<< HEAD
 ## Paso 9: Crear Pull Request
 
 1. Ve a tu fork en GitHub: `https://github.com/TU_USUARIO/ejercicios-bigdata`
@@ -294,6 +309,51 @@ Cuando el profesor apruebe:
 - :white_check_mark: Veras un check verde en el PR
 - :white_check_mark: Podras hacer merge (o el profesor lo hara)
 - :white_check_mark: Ejercicio completado!
+=======
+## Paso 9: Verificar tu Entrega
+
+1. Ve a tu fork en GitHub: `https://github.com/TU_USUARIO/ejercicios-bigdata`
+2. Navega a tu carpeta de entrega
+3. Verifica que estan todos tus archivos, especialmente `PROMPTS.md`
+
+!!! success "Entrega Completada"
+    No necesitas hacer nada mas. El sistema evalua tu `PROMPTS.md` automaticamente.
+
+---
+
+## Paso 10: El Archivo PROMPTS.md
+
+**Este es el archivo mas importante de tu entrega.**
+
+Documenta tus prompts de IA mientras trabajas:
+
+```markdown
+# Prompts de IA - Ejercicio 01
+
+## Prompt A: Cargar datos a SQLite
+
+**IA usada:** ChatGPT / Claude / etc.
+
+**Prompt exacto:**
+> como cargo un csv grande a sqlite usando python con chunks
+
+---
+
+## Prompt B: Optimizar queries
+
+[Mismo formato...]
+
+---
+
+## Blueprint Final
+
+[Al terminar, pide a la IA un resumen de lo que construiste]
+```
+
+!!! danger "NO limpies tus prompts"
+    Pega tus prompts TAL CUAL los escribiste, con errores y todo.
+    El sistema detecta si fueron "limpiados".
+>>>>>>> upstream/main
 
 ---
 
@@ -365,7 +425,11 @@ git push origin garcia-ejercicio-01
 
 ## Checklist del Ejercicio
 
+<<<<<<< HEAD
 Antes de crear el Pull Request, verifica:
+=======
+Antes de subir tu trabajo (git push), verifica:
+>>>>>>> upstream/main
 
 - [ ] El codigo ejecuta sin errores
 - [ ] Todas las tareas del ejercicio estan completas

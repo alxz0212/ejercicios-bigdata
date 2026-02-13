@@ -602,4 +602,8 @@ Ahora que conoces los comandos esenciales:
 
 - [Fork y Clone](fork-clone.md) - Setup inicial del proyecto
 - [Sincronizar Fork](sincronizar-fork.md) - Mantener tu fork actualizado
+<<<<<<< HEAD
 - [Crear Pull Requests](pull-requests.md) - Entregar ejercicios
+=======
+- [Guia de Entregas](../entregas/guia-entregas.md) - Como entregar ejercicios
+>>>>>>> upstream/main

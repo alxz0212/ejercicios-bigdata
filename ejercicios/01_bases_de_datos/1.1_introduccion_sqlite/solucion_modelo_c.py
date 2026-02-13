@@ -30,7 +30,11 @@ from datetime import datetime, timedelta
 # ═══════════════════════════════════════════════════════════════════
 
 BASE_DIR = Path(__file__).parent.parent.parent.parent
+<<<<<<< HEAD
 RUTA_CSVs = BASE_DIR / ".profesor" / ".datos" / "csv_tienda_informatica"
+=======
+RUTA_CSVs = BASE_DIR / "datos" / "csv_tienda_informatica"
+>>>>>>> upstream/main
 RUTA_DB = Path(__file__).parent / "tienda_modelo_c.db"
 
 # Importar funciones del Modelo B
