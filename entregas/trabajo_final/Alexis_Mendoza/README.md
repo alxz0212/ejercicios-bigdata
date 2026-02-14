@@ -12,7 +12,7 @@
         </a>
     </p>
     <p>
-        <a href="https://alxz0212.github.io/TF_BigData_CDM/">
+        <a href="docs/index.md">
             <img src="https://img.shields.io/badge/📚_Ver_Documentación_Oficial-Click_Aquí-success?style=for-the-badge&logo=materialformkdocs" alt="Docs">
         </a>
     </p>
@@ -165,7 +165,7 @@ docker exec -d jupyter_lab streamlit run /home/jovyan/work/src/app_streamlit_pro
 │   ├── 05_EXPLICACION_CODIGO.md# Catálogo técnico de scripts
 │   ├── 06_RESPUESTAS.md        # Cuestionario resuelto
 │   ├── 07_PROTOTIPO.md         # Bocetos de UI
-│   └── 08_PROMPTS.md           # [New] Registro de Prompts y Blueprint
+│   └── 08_PROMPTS.md           # Registro de Prompts y Blueprint
 ├── src/                        # [Code] Código Fuente Python
 │   ├── pipeline.py             # Lógica ETL Big Data
 │   ├── analysis.py             # ML Engine (Random Forest)
