@@ -95,6 +95,17 @@ docker exec -d -w /home/jovyan/work/src jupyter_lab streamlit run app_streamlit_
 
 ---
 
+## **PASO 7: GENERAR DASHBOARD HTML (PORTÁTIL)** 🌍
+Genera un archivo HTML único con todos los gráficos incrustados, ideal para enviar por correo o entregar sin necesidad de que el receptor tenga Docker instalado.
+
+**Comando:**
+```bash
+docker exec jupyter_lab python /home/jovyan/work/src/export_dashboard.py
+```
+El archivo se generará en `docs/dashboard.html`.
+
+---
+
 ## **ACCESOS** 🌐
 
 | Servicio | URL | Notas |
