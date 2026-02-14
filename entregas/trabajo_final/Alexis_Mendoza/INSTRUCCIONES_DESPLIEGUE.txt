@@ -8,7 +8,7 @@ PRERREQUISITOS:
 1. Tener Docker Desktop instalado y corriendo.
 2. Tener el código fuente descargado.
 3. Abrir una terminal (PowerShell o CMD) y navegar a la carpeta del proyecto:
-   > cd trabajo_final/Alexis_Mendoza
+   > cd entregas/trabajo_final/Alexis_Mendoza
    (IMPORTANTE: Todos los comandos deben ejecutarse desde esta carpeta)
 
 --------------------------------------------------------------------------------
