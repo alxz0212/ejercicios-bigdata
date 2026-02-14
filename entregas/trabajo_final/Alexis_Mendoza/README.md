@@ -57,7 +57,7 @@ A través de un pipeline automatizado, se procesaron décadas de datos históric
 > **¿Buscas los Dashboards Avanzados?**
 > El archivo HTML anterior es una versión portátil. Este proyecto incluye **Dashboards Dinámicos en Streamlit** (con simulador de IA en tiempo real) que requieren levantar la infraestructura Docker.
 >
-> 📜 **Sigue los pasos completos aquí:** **[INSTRUCCIONES DE DESPLIEGUE](alexis_mendoza/INSTRUCCIONES_DESPLIEGUE.md)**
+> 📜 **Sigue los pasos completos aquí:** **[INSTRUCCIONES DE DESPLIEGUE](INSTRUCCIONES_DESPLIEGUE.md)**
 
 
 
