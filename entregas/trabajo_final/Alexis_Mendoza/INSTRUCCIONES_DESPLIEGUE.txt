@@ -27,7 +27,9 @@ Las siguientes veces será casi instantáneo.
 --->*Docker debe estar abierto antes de ejecutar cualquier comando*
 
 --------------------------------------------------------------------------------
-PASO 1: PREPARACIÓN DE DATOS (IMPORTANTE) �
+PASO 1: PREPARACIÓ
+
+N DE DATOS (IMPORTANTE) �
 --------------------------------------------------------------------------------
 Antes de iniciar, necesitas el dataset "Quality of Government" (Time-Series).
 1. Crea la carpeta donde irán los datos raw.
@@ -192,7 +194,7 @@ SCRIPT AUTOMÁTICO (EXPERIMENTAL) 🤖
 --------------------------------------------------------------------------------
 Si no quieres escribir comandos de Git, he creado un script para ti:
 
-1.  Busca el archivo `upload_to_github.bat` en la carpeta raíz.
+1.  Busca el archivo `upload_to_github.bat` en esta misma carpeta.
 2.  Haz doble clic sobre él.
 3.  Te pedirá que escribas qué cambios has hecho.
 4.  Presiona ENTER y listo, subirá todo solo.
