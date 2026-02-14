@@ -45,8 +45,10 @@ A través de un pipeline automatizado, se procesaron décadas de datos históric
 | :---------------------------------------------------- | :---------------------------------------------------------------- |
 | **[🚀 Guía de Trabajo](docs/01_README.md)**                | Paso a paso para completar el proyecto. Instrucciones detalladas. |
 | **[🐳 Infraestructura](docs/02_INFRAESTRUCTURA.md)**       | Explicación técnica de Docker, servicios y redes.                 |
+| **[🤖 Reflexión IA](docs/04_REFLEXION_IA.md)**             | Análisis crítico sobre el uso de asistentes de IA en el desarrollo. |
 | **[💻 Catálogo de Código](docs/05_EXPLICACION_CODIGO.md)** | Documentación técnica de scripts Python (`src/`) y Pipeline ETL.  |
-| **[📊 Resultados](docs/03_RESULTADOS.md)**                 | Informe final con gráficos, modelos y hallazgos del "Gran Juego". |
+| **[📝 Respuestas](docs/06_RESPUESTAS.md)**                 | Solución al cuestionario teórico del trabajo final.               |
+| **[🎨 Prototipo](docs/07_PROTOTIPO.md)**                   | Bocetos y diseño preliminar de la interfaz de usuario.            |
 | **[🤖 Registro de Prompts](docs/08_PROMPTS.md)**           | Historial de interacciones con IA y Blueprint Técnico.            |
 
 ---
@@ -159,7 +161,10 @@ docker exec -d jupyter_lab streamlit run /home/jovyan/work/src/app_streamlit_pro
 │   ├── 01_README.md            # Guía de Trabajo (Paso a paso)
 │   ├── 02_INFRAESTRUCTURA.md   # Detalles de Docker
 │   ├── 03_RESULTADOS.md        # Informe de hallazgos
+│   ├── 04_REFLEXION_IA.md      # Ensayo sobre uso de IA
 │   ├── 05_EXPLICACION_CODIGO.md# Catálogo técnico de scripts
+│   ├── 06_RESPUESTAS.md        # Cuestionario resuelto
+│   ├── 07_PROTOTIPO.md         # Bocetos de UI
 │   └── 08_PROMPTS.md           # [New] Registro de Prompts y Blueprint
 ├── src/                        # [Code] Código Fuente Python
 │   ├── pipeline.py             # Lógica ETL Big Data
