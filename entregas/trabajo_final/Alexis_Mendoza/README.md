@@ -49,7 +49,7 @@ A través de un pipeline automatizado, se procesaron décadas de datos históric
 | **[💻 Catálogo de Código](05_EXPLICACION_CODIGO.md)** | Documentación técnica de scripts Python (`src/`) y Pipeline ETL. |
 | **[📝 Respuestas](docs/06_RESPUESTAS.md)**                 | Solución al cuestionario teórico del trabajo final.               |
 | **[📊 Resultados](03_RESULTADOS.md)** | Informe final con gráficos, modelos y hallazgos del "Gran Juego". |
-| **[🖥️ Dashboard Interactivo](docs/dashboard.html)** | **Nuevo:** Versión portada HTML del cuadro de mando (No requiere Python). |
+| **[🖥️ Dashboard Interactivo (Ver Online)](https://htmlpreview.github.io/?https://github.com/alxz0212/ejercicios-bigdata/blob/main/entregas/trabajo_final/Alexis_Mendoza/docs/dashboard.html)** | **Nuevo:** Versión portada HTML del cuadro de mando (No requiere Python). |
 | **[🎨 Prototipo](docs/07_PROTOTIPO.md)**                   | Bocetos y diseño preliminar de la interfaz de usuario.            |
 | **[🤖 Registro de Prompts](docs/08_PROMPTS.md)**           | Historial de interacciones con IA y Blueprint Técnico.            |
 
