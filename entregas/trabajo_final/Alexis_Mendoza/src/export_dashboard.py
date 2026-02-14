@@ -140,8 +140,10 @@ if not os.path.exists(output_dir):
 output_file = os.path.join(output_dir, "dashboard.html")
 
 # Convertir figuras
-div_map = fig_map.to_html(full_html=False, include_plotlyjs='cdn')
+# IMPORTANTE: include_plotlyjs=True embebe la librería entera (3MB+) para que funcione offline/sin CDN
+div_map = fig_map.to_html(full_html=False, include_plotlyjs=True)
 div_radar = fig_radar.to_html(full_html=False, include_plotlyjs=False)
+
 div_corr = fig_corr.to_html(full_html=False, include_plotlyjs=False)
 div_imp = fig_imp.to_html(full_html=False, include_plotlyjs=False)
 
