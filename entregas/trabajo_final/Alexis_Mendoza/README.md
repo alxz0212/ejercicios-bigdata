@@ -47,6 +47,7 @@ A través de un pipeline automatizado, se procesaron décadas de datos históric
 | **[🐳 Infraestructura](docs/02_INFRAESTRUCTURA.md)**       | Explicación técnica de Docker, servicios y redes.                 |
 | **[💻 Catálogo de Código](docs/05_EXPLICACION_CODIGO.md)** | Documentación técnica de scripts Python (`src/`) y Pipeline ETL.  |
 | **[📊 Resultados](docs/03_RESULTADOS.md)**                 | Informe final con gráficos, modelos y hallazgos del "Gran Juego". |
+| **[🤖 Registro de Prompts](docs/08_PROMPTS.md)**           | Historial de interacciones con IA y Blueprint Técnico.            |
 
 ---
 
@@ -158,7 +159,8 @@ docker exec -d jupyter_lab streamlit run /home/jovyan/work/src/app_streamlit_pro
 │   ├── 01_README.md            # Guía de Trabajo (Paso a paso)
 │   ├── 02_INFRAESTRUCTURA.md   # Detalles de Docker
 │   ├── 03_RESULTADOS.md        # Informe de hallazgos
-│   └── 05_EXPLICACION_CODIGO.md# Catálogo técnico de scripts
+│   ├── 05_EXPLICACION_CODIGO.md# Catálogo técnico de scripts
+│   └── 08_PROMPTS.md           # [New] Registro de Prompts y Blueprint
 ├── src/                        # [Code] Código Fuente Python
 │   ├── pipeline.py             # Lógica ETL Big Data
 │   ├── analysis.py             # ML Engine (Random Forest)
