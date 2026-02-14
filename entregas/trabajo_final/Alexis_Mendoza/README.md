@@ -53,6 +53,12 @@ A través de un pipeline automatizado, se procesaron décadas de datos históric
 | **[🎨 Prototipo](docs/07_PROTOTIPO.md)**                   | Bocetos y diseño preliminar de la interfaz de usuario.            |
 | **[🤖 Registro de Prompts](docs/08_PROMPTS.md)**           | Historial de interacciones con IA y Blueprint Técnico.            |
 
+> [!NOTE] 
+> **¿Buscas los Dashboards Avanzados?**
+> El archivo HTML anterior es una versión portátil. Este proyecto incluye **Dashboards Dinámicos en Streamlit** (con simulador de IA en tiempo real) que requieren levantar la infraestructura Docker.
+>
+> 📜 **Sigue los pasos completos aquí:** **[INSTRUCCIONES DE DESPLIEGUE](docs/01_README.md)**
+
 ---
 
 ## 🏗️ Arquitectura del Sistema
