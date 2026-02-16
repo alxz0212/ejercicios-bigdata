@@ -18,8 +18,8 @@ try:
         print("❌ Error: El archivo no parece estar encriptado (falta la marca ---PAYLOAD---).")
         sys.exit(1)
         
-    # Extraer payload
-    payload = content.split('---PAYLOAD---')[1].strip()
+    # Extraer payload (Usamos [-1] porque la palabra PAYLOAD aparece también en el ejemplo de código del md)
+    payload = content.split('---PAYLOAD---')[-1].strip()
     print(f"✅ Payload encontrado (empieza con: {payload[:15]}...)")
     
     # Decodificar
