@@ -102,7 +102,7 @@ Genera un archivo HTML único con todos los gráficos incrustados, ideal para en
 ```bash
 docker exec jupyter_lab python /home/jovyan/work/src/export_dashboard.py
 ```
-El archivo se generará en `docs/dashboard.html`.
+El archivo se generará en `dashboard.html`.
 
 ---
 

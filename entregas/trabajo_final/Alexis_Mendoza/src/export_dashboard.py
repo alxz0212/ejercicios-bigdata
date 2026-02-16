@@ -133,7 +133,7 @@ fig_radar.update_layout(
 # -----------------------------------------------------------------------------
 # Generación de HTML
 # -----------------------------------------------------------------------------
-output_dir = os.path.join(os.path.dirname(__file__), "../docs")
+output_dir = os.path.join(os.path.dirname(__file__), "..")
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
