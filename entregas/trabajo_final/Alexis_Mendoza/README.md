@@ -12,7 +12,7 @@
         </a>
     </p>
     <p>
-        <a href="docs/index.md">
+        <a href="index.md">
             <img src="https://img.shields.io/badge/📚_Ver_Documentación_Oficial-Click_Aquí-success?style=for-the-badge&logo=materialformkdocs" alt="Docs">
         </a>
     </p>
