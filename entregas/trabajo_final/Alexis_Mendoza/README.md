@@ -51,7 +51,7 @@ A través de un pipeline automatizado, se procesaron décadas de datos históric
 | **[📊 Resultados](03_RESULTADOS.md)** | Informe final con gráficos, modelos y hallazgos del "Gran Juego". |
 | **[🖥️ Dashboard Interactivo (Ver Online)](https://htmlpreview.github.io/?https://github.com/alxz0212/ejercicios-bigdata/blob/main/entregas/trabajo_final/Alexis_Mendoza/dashboard.html)** | **Nuevo:** Versión portada HTML del cuadro de mando (No requiere Python). |
 | **[🎨 Prototipo](07_PROTOTIPO.md)**                   | Bocetos y diseño preliminar de la interfaz de usuario.            |
-| **[🤖 Registro de Prompts](08_PROMPTS.md)**           | Historial de interacciones con IA y Blueprint Técnico.            |
+| **[🤖 Registro de Prompts](PROMPTS.md)**              | Historial de interacciones con IA y Blueprint Técnico.            |
 
 > [!NOTE] 
 > **¿Buscas los Dashboards Avanzados?**
