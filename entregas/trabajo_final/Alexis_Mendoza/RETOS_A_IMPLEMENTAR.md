@@ -8,7 +8,7 @@ Ha sido ofuscado por seguridad.
 Si tienes autorización, ejecuta este comando en tu terminal para revelarlo:
 
 ```bash
-python -c "import base64; print(base64.b64decode(open('RETOS_A_IMPLEMENTAR.md', encoding='utf-8').read().split('---PAYLOAD---')[1]).decode('utf-8'))"
+python -c "import base64; print(base64.b64decode(open('RETOS_A_IMPLEMENTAR.md', encoding='utf-8').read().split('---PAYLOAD---')[1].strip()).decode('utf-8'))"
 ```
 
 ---PAYLOAD---
