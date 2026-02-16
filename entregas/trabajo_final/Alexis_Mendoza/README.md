@@ -167,15 +167,15 @@ docker exec -d jupyter_lab streamlit run /home/jovyan/work/src/app_streamlit_pro
 
 ```text
 ├── .github/workflows/          # [DevOps] Automatización de despliegue web
-├── docs/                       # [Doc] Documentación oficial (Markdown)
-│   ├── 01_README.md            # Guía de Trabajo (Paso a paso)
-│   ├── 02_INFRAESTRUCTURA.md   # Detalles de Docker
-│   ├── 03_RESULTADOS.md        # Informe de hallazgos
-│   ├── 04_REFLEXION_IA.md      # Ensayo sobre uso de IA
-│   ├── 05_EXPLICACION_CODIGO.md# Catálogo técnico de scripts
-│   ├── 06_RESPUESTAS.md        # Cuestionario resuelto
-│   ├── 07_PROTOTIPO.md         # Bocetos de UI
-│   └── 08_PROMPTS.md           # Registro de Prompts y Blueprint
+├── 01_README.md                # [Doc] Guía de Trabajo (Paso a paso)
+├── 02_INFRAESTRUCTURA.md       # [Doc] Detalles de Docker
+├── 03_RESULTADOS.md            # [Doc] Informe de hallazgos
+├── 04_REFLEXION_IA.md          # [Doc] Ensayo sobre uso de IA
+├── 05_EXPLICACION_CODIGO.md    # [Doc] Catálogo técnico de scripts
+├── 06_RESPUESTAS.md            # [Doc] Cuestionario resuelto
+├── 07_PROTOTIPO.md             # [Doc] Bocetos de UI
+├── PROMPTS.md                  # [Doc] Registro de Prompts y Blueprint
+├── dashboard.html              # [Web] Dashboard Portátil (HTML Standalone)
 ├── src/                        # [Code] Código Fuente Python
 │   ├── pipeline.py             # Lógica ETL Big Data
 │   ├── analysis.py             # ML Engine (Random Forest)
